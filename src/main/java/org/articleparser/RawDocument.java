@@ -43,7 +43,7 @@ class RawDocument {
         convertDivToParagragh();
     }
 
-    private boolean isElementUnlikely(Element element) {
+    private boolean isUnlikelyElement(Element element) {
         String classesAndIds = element.className() + element.id();
         return regexMatch(UNLIKELY_REGEX, classesAndIds) &&
             !regexMatch(MAYBE_REGEX, classesAndIds) &&
@@ -53,7 +53,7 @@ class RawDocument {
     private void deleteUnlikelyElement() {
         if (soup != null) {
             for (Element element : soup.select("*")) {
-                if (isElementUnlikely(element))
+                if (isUnlikelyElement(element))
                     element.remove();
             }
         }
