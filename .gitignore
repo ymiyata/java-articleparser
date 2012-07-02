@@ -1,0 +1,11 @@
+# Non-ignored files and directories
+!README.md
+!.gitignore
+!pom.xml
+!src/
+!example/
+
+# Ignored files
+.DS_Store
+*.class
+target/
