@@ -140,7 +140,6 @@ public class ArticleParser {
         }
         return new Article(title, this.getUrl(), articleSnippet, article,
                 null, "", imageSrc, "");
- 
     }
 
     private boolean regexMatch(Pattern regex, String target) {
