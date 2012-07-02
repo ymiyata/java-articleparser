@@ -8,7 +8,7 @@ Java ArticleParser uses jsoup (https://github.com/jhy/jsoup) to parse html.
 
 Example
 --------
-'''java
+```java
 import java.io.IOException;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -35,4 +35,4 @@ public class HelloArticleParser {
         }
     }
 }
-,,,
+```
